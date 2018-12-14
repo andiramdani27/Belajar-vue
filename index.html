@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Belajar Vue Js</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    
+    <div id="app">
+    	<div v-html="raw"></div><br>
+		{{ nama + " ramdani" }} - {{* alamat }} - {{ laki ? 'laki-laki' : 'perempuan' }}
+	</div>
+
+		<script src="vue.js"></script>
+		<Script>
+			var app = new Vue ({
+					el:'#app',
+					data: {
+						nama: 'Andi',
+						alamat: 'Bandung',
+						raw : '<b>IDENTITAS DIRI</b>',
+						laki:true
+					},
+				})
+		</Script>
+
+    </body>
+</html>
